@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rawa Gaming</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+  </head>
+  <body>
+    <!-- Large Screens -->
+    <header class="header d-none d-md-block shadow">
+      <div class="container">
+        <div class="header__contents">
+          <div class="header__search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="header__upload">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <input type="file" placeholder="Search" />
+          </div>
+          <div class="header__icons">
+            <a href="#" class="header__icon attachIcon">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            <a href="#" class="header__icon attachIcon">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Small Screens -->
+    <header class="header header-mobile d-block d-md-none shadow">
+      <div class="container">
+        <div class="header__contents">
+          <div class="header__dropdown">
+            <i class="fa-solid fa-bars"></i>
+            <!-- Close Button -->
+            <input type="checkbox" id="dropdownInput" class="dropdown-input" />
+            <div class="header__dropdown-menu">
+              <!-- Logo -->
+              <div class="logo text-center">
+                <i class="fa-solid fa-box"></i> LOGO
+              </div>
+              <!-- Button Menu -->
+              <div class="sidebar__btn text-center">
+                <button>
+                  <i class="fa-solid fa-folder-plus"></i> New Folder
+                </button>
+              </div>
+              <!-- Navigation Menu -->
+              <ul class="sidebar__menu">
+                <li>
+                  <a href="#" class="active"
+                    ><i class="fa-solid fa-house"></i> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-trash-can"></i> Trash</a>
+                </li>
+              </ul>
+              <hr />
+              <!-- Footer -->
+              <div class="footer text-center">
+                <div class="sidebar__storage">
+                  <span><i class="fa-solid fa-cloud"></i> Storage</span>
+                </div>
+                <div class="sidebar__card shadow">
+                  <div class="card__progress-circle">
+                    <div class="progress-bar">
+                      <progress
+                        value="10"
+                        min="0"
+                        max="100"
+                        style="visibility: hidden; height: 0; width: 0"
+                      >
+                        75%
+                      </progress>
+                    </div>
+                  </div>
+                  <span>10GB / 100GB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <aside class="sidebar d-none d-md-block">
+      <!-- Logo -->
+      <div class="logo text-center"><i class="fa-solid fa-box"></i> LOGO</div>
+
+      <!-- Button Menu -->
+      <div class="sidebar__btn text-center">
+        <button><i class="fa-solid fa-folder-plus"></i> New Folder</button>
+      </div>
+      <!-- Navigation Menu -->
+      <ul class="sidebar__menu">
+        <li>
+          <a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-trash-can"></i> Trash</a>
+        </li>
+      </ul>
+      <hr />
+      <!-- Footer -->
+      <div class="footer text-center">
+        <div class="sidebar__storage">
+          <span><i class="fa-solid fa-cloud"></i> Storage</span>
+        </div>
+        <div class="sidebar__card shadow">
+          <div class="card__progress-circle">
+            <div class="progress-bar">
+              <progress
+                value="10"
+                min="0"
+                max="100"
+                style="visibility: hidden; height: 0; width: 0"
+              >
+                75%
+              </progress>
+            </div>
+          </div>
+          <span>10GB / 100GB</span>
+        </div>
+      </div>
+    </aside>
+    <!-- Main Content -->
+    <main class="content">
+      <div class="container">
+        <div class="table__header">
+          <h1>Table</h1>
+          <hr />
+          <div class="table__header__contents d-flex">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              fugiat.
+            </p>
+            <div class="table__header__content d-flex">
+              <div class="table__header__content start d-flex">
+                <p>No item selected</p>
+              </div>
+              <div class="table__header__content middle d-flex">
+                <a href="#"><i class="fa-solid fa-right-left"></i></a>
+                <a href="#"><i class="fa-solid fa-filter"></i></a>
+              </div>
+              <div class="table__header__content end d-flex">
+                <a href="#"><i class="fa-solid fa-print"></i></a>
+                <a href="#"><i class="fa-regular fa-clone"></i></a>
+                <a href="#"><i class="fa-solid fa-layer-group"></i></a>
+                <a href="#"><i class="fa-solid fa-circle-chevron-left"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th><input type="checkbox" /></th>
+                <th>Name</th>
+                <th>Uploaded</th>
+                <th>Size</th>
+                <th>View NO.</th>
+                <th>Last modified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <img src="./assets/imgs/profile.png" width="30" alt="Image" />
+                  <span>User</span>
+                </td>
+                <td>NOV 26, 2022 3:18AM</td>
+                <td>18 MB</td>
+                <td>0 times</td>
+                <td>Dec 10, 2022 2:00PM you</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const dropdownInput = document.querySelectorAll(".dropdown-input");
+      dropdownInput.forEach((single) => {
+        single.addEventListener("change", () => {
+          console.log(dropdownInput.checked);
+        });
+      });
+    </script>
+  </body>
+</html>
